@@ -1,0 +1,54 @@
+{
+    "name": "geocodio/drone-ci-client",
+    "description": "Simple, lightweight PHP client for Drone CI",
+    "keywords": [
+        "drone",
+        "ci",
+        "drone-ci-client"
+    ],
+    "homepage": "https://github.com/geocodio/drone-ci-client",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mathias Hansen",
+            "email": "hello@geocod.io",
+            "homepage": "https://www.geocod.io",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2|^8.0",
+        "guzzlehttp/guzzle": "^6.3|^7.0"
+    },
+    "require-dev": {
+        "symfony/var-dumper": "^4.3",
+        "phpunit/phpunit": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Geocodio\\Drone\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Geocodio\\Drone\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "toc": "markdown-toc README.md -i"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Geocodio\\Drone\\DroneServiceProvider"
+            ],
+            "aliases": {
+                "Drone": "Geocodio\\Drone\\DroneFacade"
+            }
+        }
+    }
+}
