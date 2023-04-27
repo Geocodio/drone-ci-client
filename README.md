@@ -2,6 +2,18 @@
 
 > Simple, lightweight PHP client for [Drone CI](https://www.drone.io)
 
+<!-- toc -->
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Usage with Laravel](#usage-with-laravel)
+- [Testing](#testing)
+- [Changelog](#changelog)
+- [Security](#security)
+- [License](#license)
+
+<!-- tocstop -->
+
 ## Installation
 
 You can install the package via composer:
